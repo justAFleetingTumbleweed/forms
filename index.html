@@ -201,12 +201,14 @@
 				<tr>
 					<td>Sauce</td>
 					<td>
-						<input type="radio" name="pastaSauce" id="carbonaraSauce" value="carbonara" checked />
-						<label for="carbonaraSauce">Carbonara</label>
-						<input type="radio" name="pastaSauce" id="pestoSauce" value="pesto" />
-						<label for="pestoSauce">Pesto</label>
-						<input type="radio" name="pastaSauce" id="spaghettiSauce" value="spaghetti" />
-						<label for="spaghettiSauce">Spaghetti</label>
+						<select name="pastaSauce" id="pastaSauce">
+							<option value="spaghetti">Spaghetti</option>
+							<option value="carbonara" selected>Carbonara</option>
+							<option value="pesto">Pesto</option>
+							<option value="alfredo">Alfredo</option>
+							<option value="marinara">Marinara</option>
+							<option value="arrabbiata">Arrabbiata</option>
+						</select>
 					</td>
 				</tr>
 				<tr>
@@ -216,6 +218,10 @@
 						<label for="extraCheese">Extra Cheese</label>
 						<input type="checkbox" name="extraSauce" id="extraSauce" />
 						<label for="extraSauce">Extra Sauce</label>
+						<input type="checkbox" name="extraToppings" id="extraToppings" />
+						<label for="extraToppings">Extra Toppings</label>
+						<input type="checkbox" name="extraMeat" id="extraMeat" />
+						<label for="extraMeat">Extra Meat</label>
 					</td>
 				</tr>
 				<tr>
@@ -231,22 +237,22 @@
 					<td>Size</td>
 					<td>
 						<input type="radio" name="friesSize" id="smallFries" value="small" checked />
-						<label for="smallFries">Small Fries</label>
+						<label for="smallFries">Small</label>
 						<input type="radio" name="friesSize" id="mediumFries" value="medium" />
-						<label for="mediumFries">Medium Fries</label>
+						<label for="mediumFries">Medium</label>
 						<input type="radio" name="friesSize" id="largeFries" value="largeFries" />
-						<label for="largeFries">Large Fries</label>
+						<label for="largeFries">Large</label>
 					</td>
 				</tr>
 				<tr>
 					<td>Flavors</td>
 					<td>
-						<input type="radio" name="friesFlavor" id="barbecueFries" value="barbecue" checked />
-						<label for="barbecueFries">Barbecue</label>
-						<input type="radio" name="friesFlavor" id="cheeseFries" value="cheese" />
-						<label for="cheeseFries">Cheese</label>
-						<input type="radio" name="friesFlavor" id="sourCreamFries" value="sourCream" />
-						<label for="sourCreamFries">Sour Cream</label>
+						<select name="friesFlavor" id="friesFlavor">
+							<option value="salted">Salted</option>
+							<option value="barbecue">Barbecue</option>
+							<option value="cheese">Cheese</option>
+							<option value="sourCream">Sour Cream</option>
+						</select>
 					</td>
 				</tr>
 				<tr>
@@ -261,23 +267,23 @@
 				<tr>
 					<td>Size</td>
 					<td>
-						<input type="radio" name="drinkSize" id="8oz" value="8" checked />
-						<label for="8oz">8 Ounces</label>
-						<input type="radio" name="drinkSize" id="12oz" value="12" />
-						<label for="12oz">12 Ounces</label>
-						<input type="radio" name="drinkSize" id="16oz" value="16" />
-						<label for="16oz">16 Ounces</label>
-						<input type="radio" name="drinkSize" id="20oz" value="20" />
-						<label for="20oz">20 Ounces</label>
+						<select name="drinkSize" id="drinkSize">
+							<option value="8" selected>8 Ounces</option>
+							<option value="12">12 Ounces</option>
+							<option value="16">16 Ounces</option>
+							<option value="20">20 Ounces</option>
+							<option value="24">24 Ounces</option>
+						</select>
 					</td>
 				</tr>
 				<tr>
 					<td>Type</td>
 					<td>
 						<select name="drinkFlavor" id="drinkFlavor">
-							<option value="water" selected>Water</option>
+							<option value="cola" selected>Cola</option>
+							<option value="colaFloat" selected>Cola Float</option>
+							<option value="water">Water</option>
 							<option value="fruitJuice">Fruit Juice</option>
-							<option value="cola">Cola</option>
 							<option value="milk">Milk</option>
 							<option value="iceTea">Iced Tea</option>
 						</select>
