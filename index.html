@@ -90,7 +90,7 @@
 		</style>
 	</head>
 	<body>
-		<form method="get" action="iframe.html">
+		<form method="get" action="index.html">
 			<table>
 				<tr>
 					<h1>Customer Info</h1>
@@ -113,7 +113,7 @@
 				</tr>
 				<tr>
 					<td>
-						<label for="contact">Contact Number</label>
+						<label for="contactNumber">Contact Number</label>
 					</td>
 					<td>
 						<input type="tel" name="contactNumber" id="contactNumber" placeholder="Enter your contact number here" />
@@ -124,7 +124,7 @@
 						<label for="emailAddress">Email Address</label>
 					</td>
 					<td>
-						<input type="email" name="email" id="email" placeholder="Enter your email here" />
+						<input type="email" name="email" id="emailAddress" placeholder="Enter your email here" />
 					</td>
 				</tr>
 				<tr>
@@ -146,7 +146,7 @@
 			</table>
 		</form>
 
-		<form action="">
+		<form method="get" action="index.html">
 			<table>
 				<tr>
 					<h1>Order Form</h1>
@@ -156,7 +156,7 @@
 						<label for="items">Items</label>
 					</td>
 					<td>
-						<input type="checkbox" id="burger" name="order" /> <label for="burger"> Burgers </label> <input type="checkbox" id="pasta" name="order" /> <label for="fries"> Fries </label> <input type="checkbox" id="fries" name="order" />
+						<input type="checkbox" id="burger" name="order" /> <label for="burger"> Burgers </label> <input type="checkbox" id="fries" name="order" /> <label for="fries"> Fries </label> <input type="checkbox" id="pasta" name="order" />
 						<label for="pasta"> Pasta </label> <input type="checkbox" id="drink" name="order" /> <label for="drink"> Drink </label>
 					</td>
 				</tr>
@@ -183,13 +183,13 @@
 					<td>Bun</td>
 					<td>
 						<input type="radio" name="bun" id="whiteBun" value="whiteBun" checked />
-						<label for="singlePatty">White Bun</label>
+						<label for="whiteBun">White Bun</label>
 						<input type="radio" name="bun" id="wheatBun" value="wheatBun" />
-						<label for="doublePatty">Wheat Bun</label>
+						<label for="wheatBun">Wheat Bun</label>
 					</td>
 				</tr>
 				<tr>
-					<td>Quantity</td>
+					<td><label for="burgerQuantity">Quantity</label></td>
 					<td><input type="number" name="burgerQuantity" id="burgerQuantity" min="1" max="99" value="1" /></td>
 				</tr>
 				<tr>
@@ -201,24 +201,24 @@
 					<td>Sauce</td>
 					<td>
 						<input type="radio" name="pastaSauce" id="carbonaraSauce" value="carbonara" checked />
-						<label for="singlePatty">Carbonara</label>
+						<label for="carbonaraSauce">Carbonara</label>
 						<input type="radio" name="pastaSauce" id="pestoSauce" value="pesto" />
-						<label for="doublePatty">Pesto</label>
-						<input type="radio" name="spaghettiSauce" id="spaghettiSauce" value="spaghetti" />
-						<label for="doublePatty">Spaghetti</label>
+						<label for="pestoSauce">Pesto</label>
+						<input type="radio" name="pastaSauce" id="spaghettiSauce" value="spaghetti" />
+						<label for="spaghettiSauce">Spaghetti</label>
 					</td>
 				</tr>
 				<tr>
 					<td><label for="extrasPasta">Extras</label></td>
 					<td>
 						<input type="checkbox" name="extraCheese" id="extraCheese" />
-						<label for="extrasPasta">Extra Cheese</label>
+						<label for="extraCheese">Extra Cheese</label>
 						<input type="checkbox" name="extraSauce" id="extraSauce" />
-						<label for="extrasPasta">Extra Sauce</label>
+						<label for="extraSauce">Extra Sauce</label>
 					</td>
 				</tr>
 				<tr>
-					<td>Quantity (Per Box)</td>
+					<td><label for="pastaQuantity">Quantity (Per Box)</label></td>
 					<td><input type="number" name="pastaQuantity" id="pastaQuantity" min="1" max="99" value="1" /></td>
 				</tr>
 				<tr>
@@ -230,26 +230,26 @@
 					<td>Size</td>
 					<td>
 						<input type="radio" name="friesSize" id="smallFries" value="small" checked />
-						<label for="singlePatty">Small Fries</label>
+						<label for="smallFries">Small Fries</label>
 						<input type="radio" name="friesSize" id="mediumFries" value="medium" />
-						<label for="singlePatty">Medium Fries</label>
+						<label for="mediumFries">Medium Fries</label>
 						<input type="radio" name="friesSize" id="largeFries" value="largeFries" />
-						<label for="singlePatty">Large Fries</label>
+						<label for="largeFries">Large Fries</label>
 					</td>
 				</tr>
 				<tr>
 					<td>Flavors</td>
 					<td>
 						<input type="radio" name="friesFlavor" id="barbecueFries" value="barbecue" checked />
-						<label for="singlePatty">Barbecue</label>
+						<label for="barbecueFries">Barbecue</label>
 						<input type="radio" name="friesFlavor" id="cheeseFries" value="cheese" />
-						<label for="doublePatty">Cheese</label>
+						<label for="cheeseFries">Cheese</label>
 						<input type="radio" name="friesFlavor" id="sourCreamFries" value="sourCream" />
-						<label for="doublePatty">Sour Cream</label>
+						<label for="sourCreamFries">Sour Cream</label>
 					</td>
 				</tr>
 				<tr>
-					<td>Quantity</td>
+					<td><label for="friesQuantity">Quantity</label></td>
 					<td><input type="number" name="friesQuantity" id="friesQuantity" min="1" max="99" value="1" /></td>
 				</tr>
 				<tr>
@@ -283,7 +283,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Quantity</td>
+					<td><label for="drinkQuantity">Quantity</label></td>
 					<td><input type="number" name="drinkQuantity" id="drinkQuantity" min="1" max="99" value="1" /></td>
 				</tr>
 				<tr>
@@ -296,14 +296,14 @@
 						<label for="deliveryDate">Delivery Method</label>
 					</td>
 					<td>
-						<input type="radio" name="deliveryMethod" id="deliveryMethod" value="delivery" checked />
-						<label for="deliveryMethod">Delivery</label>
-						<input type="radio" name="deliveryMethod" id="pickupMethod" value="pickup" />
-						<label for="pickupMethod">Pickup</label>
+						<input type="radio" name="deliveryMethod" id="deliver" value="delivery" checked />
+						<label for="deliver">Delivery</label>
+						<input type="radio" name="deliveryMethod" id="pickup" value="pickup" />
+						<label for="pickup">Pickup</label>
 					</td>
 				</tr>
 				<tr>
-					<td>Proof of Payment</td>
+					<td><label for="proofOfPayment">Proof of Payment</label></td>
 					<td>
 						<input type="file" name="proofOfPayment" id="proofOfPayment" accept="image/*" />
 					</td>
@@ -315,10 +315,10 @@
 				</tr>
 				<tr>
 					<td>
-						<label for="receiveMethod">Any feedbacks on improving our ordering form?</label>
+						<label for="orderFormFeedback">Any feedbacks on improving our ordering form?</label>
 					</td>
 					<td>
-						<textarea name="receiveMethod" id="receiveMethod" cols="30" rows="5"></textarea>
+						<textarea name="orderFormFeedback" id="orderFormFeedback" cols="30" rows="5"></textarea>
 					</td>
 				</tr>
 				<tr>
@@ -330,7 +330,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Submit / Clear Form</td>
+					<td>Submit / Clear Order</td>
 					<td>
 						<input type="submit" value="Submit Order" />
 						<input type="reset" value="Clear Order" />
