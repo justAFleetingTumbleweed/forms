@@ -142,7 +142,7 @@
 				</tr>
 				<tr>
 					<td>
-						<label for="dateTime">Date and Time</label>
+						<label for="dateTime">Date and Time for Delivery</label>
 					</td>
 					<td>
 						<input type="datetime-local" id="dateTime" name="dateTime" required />
@@ -185,12 +185,31 @@
 					</td>
 				</tr>
 				<tr>
+					<td>Fills</td>
+					<td>
+						<input type="checkbox" name="withCheese" id="withCheese" />
+						<label for="withCheese">Cheese</label>
+						<input type="checkbox" name="extraColeslaw" id="withColeslaw" />
+						<label for="withColeslaw">Coleslaw</label>
+						<input type="checkbox" name="withTomato" id="withTomato" />
+						<label for="withTomato">Tomato</label>
+						<input type="checkbox" name="withOnion" id="withOnion" />
+						<label for="withOnion">Onion</label>
+						<input type="checkbox" name="withCucumber" id="withCucumber" />
+						<label for="withCucumber">Cucumber</label>
+						<input type="checkbox" name="withBacon" id="withBacon" />
+						<label for="withBacon">Bacon</label>
+					</td>
+				</tr>
+				<tr>
 					<td>Bun</td>
 					<td>
-						<input type="radio" name="bun" id="whiteBun" value="whiteBun" checked />
-						<label for="whiteBun">White Bun</label>
-						<input type="radio" name="bun" id="wheatBun" value="wheatBun" />
-						<label for="wheatBun">Wheat Bun</label>
+						<select name="bun" id="bun">
+							<option value="whiteBun" selected>White Bun</option>
+							<option value="wheatBun">Wheat Bun</option>
+							<option value="honeyOat">Honey Oat</option>
+							<option value="sugarFree">Sugar-Free</option>
+						</select>
 					</td>
 				</tr>
 				<tr>
