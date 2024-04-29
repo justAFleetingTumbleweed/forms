@@ -90,7 +90,6 @@
 			input[type="range"]:hover {
 				background-color: #808080;
 			}
-			
 		</style>
 	</head>
 	<body>
@@ -117,47 +116,10 @@
 				</tr>
 				<tr>
 					<td>
-						<label for="slider">Slider</label>
-					</td>
-					<td>
-						<input type="range" id="slider" min="0" max="100" step="1" oninput="this.style.background = (this.value == this.min || this.value == this.max) ? 'gray' : 'black';" />
-					</td>
-				</tr>
-			</table>
-		</form>
-	</body>
-</html>
-			
-		</style>
-	</head>
-	<body>
-		<form method="get" action="index.html">
-			<table>
-				<tr>
-					<h1>Customer Info</h1>
-				</tr>
-				<tr>
-					<td>
-						<label for="name">Full Name</label>
-					</td>
-					<td>
-						<input type="text" size="30" id="name" placeholder="Enter your name here" required maxlength="50" />
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label for="address">Complete Address</label>
-					</td>
-					<td>
-						<input type="text" size="30" id="address" placeholder="Enter your address here" required maxlength="50" />
-					</td>
-				</tr>
-				<tr>
-					<td>
 						<label for="contactNumber">Contact Number</label>
 					</td>
 					<td>
-						<input type="tel" name="contactNumber" id="contactNumber" placeholder="Enter your contact number here" />
+						<input type="tel" name="contactNumber" id="contactNumber" placeholder="Enter your contact number here" required />
 					</td>
 				</tr>
 				<tr>
@@ -165,7 +127,7 @@
 						<label for="emailAddress">Email Address</label>
 					</td>
 					<td>
-						<input type="email" name="email" id="emailAddress" placeholder="Enter your email here" />
+						<input type="email" name="email" id="emailAddress" placeholder="Enter your email here" required />
 					</td>
 				</tr>
 				<tr>
@@ -173,7 +135,7 @@
 						<label for="receiveMethod">Description of how to get to the place?</label>
 					</td>
 					<td>
-						<textarea name="receiveMethod" id="receiveMethod" cols="30" rows="5"></textarea>
+						<textarea name="receiveMethod" id="receiveMethod" cols="30" rows="5" required></textarea>
 					</td>
 				</tr>
 				<tr>
@@ -181,7 +143,7 @@
 						<label for="dateTime">Date and Time</label>
 					</td>
 					<td>
-						<input type="datetime-local" id="dateTime" name="dateTime" />
+						<input type="datetime-local" id="dateTime" name="dateTime" required />
 					</td>
 				</tr>
 			</table>
