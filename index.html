@@ -75,7 +75,8 @@
 			}
 
 			input[type="submit"],
-			input[type="reset"] {
+			input[type="reset"],
+			input[type="range"] {
 				padding: 10px 20px;
 				border: none;
 				border-radius: 5px;
@@ -85,9 +86,48 @@
 			}
 
 			input[type="submit"]:hover,
-			input[type="reset"]:hover {
+			input[type="reset"]:hover,
+			input[type="range"]:hover {
 				background-color: #808080;
 			}
+			
+		</style>
+	</head>
+	<body>
+		<form method="get" action="simulationSubmitted.html">
+			<table>
+				<tr>
+					<h1>Customer Info</h1>
+				</tr>
+				<tr>
+					<td>
+						<label for="name">Full Name</label>
+					</td>
+					<td>
+						<input type="text" size="30" id="name" placeholder="Enter your name here" required maxlength="50" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="address">Complete Address</label>
+					</td>
+					<td>
+						<input type="text" size="30" id="address" placeholder="Enter your address here" required maxlength="50" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="slider">Slider</label>
+					</td>
+					<td>
+						<input type="range" id="slider" min="0" max="100" step="1" oninput="this.style.background = (this.value == this.min || this.value == this.max) ? 'gray' : 'black';" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+			
 		</style>
 	</head>
 	<body>
@@ -147,7 +187,7 @@
 			</table>
 		</form>
 
-		<form method="get" action="index.html">
+		<form method="get" action="simulationSubmitted.html">
 			<table>
 				<tr>
 					<h1>Order Form</h1>
