@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f0f0f0;
+				margin: 0;
+				padding: 0;
+			}
+
+			h1 {
+				color: #333;
+				text-align: center;
+				margin-top: 20px;
+			}
+
+			h3 {
+				text-align: center;
+				margin-top: 30px;
+			}
+
+			h5 {
+				text-align: center;
+			}
+
+			form {
+				background-color: #ffffff;
+				border-radius: 10px;
+				box-shadow: 4px 8px 5px rgba(0, 0, 0, 0.1);
+				padding: 20px;
+				margin: 20px auto;
+				max-width: 80vw;
+			}
+
+			table {
+				width: 100%;
+			}
+
+			label {
+				font-weight: bold;
+			}
+
+			input[type="text"],
+			input[type="tel"],
+			input[type="email"],
+			textarea,
+			select {
+				width: 90%;
+				padding: 10px;
+				border: 1px solid #f0f0f0;
+				border-radius: 5px;
+				margin-bottom: 10px;
+			}
+
+			input[type="checkbox"],
+			input[type="radio"] {
+				margin-right: 5px;
+			}
+
+			input[type="submit"],
+			input[type="reset"] {
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				background-color: #000000;
+				color: #ffffff;
+				cursor: pointer;
+			}
+
+			input[type="submit"]:hover,
+			input[type="reset"]:hover {
+				background-color: #808080;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="get" action="iframe.html">
+			<table>
+				<tr>
+					<h1>Customer Info</h1>
+				</tr>
+				<tr>
+					<td>
+						<label for="name">Full Name</label>
+					</td>
+					<td>
+						<input type="text" size="30" id="name" placeholder="Enter your name here" required maxlength="50" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="address">Complete Address</label>
+					</td>
+					<td>
+						<input type="text" size="30" id="address" placeholder="Enter your address here" required maxlength="50" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="contact">Contact Number</label>
+					</td>
+					<td>
+						<input type="tel" name="contactNumber" id="contactNumber" placeholder="Enter your contact number here" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="emailAddress">Email Address</label>
+					</td>
+					<td>
+						<input type="email" name="email" id="email" placeholder="Enter your email here" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="receiveMethod">Description of how to get to the place?</label>
+					</td>
+					<td>
+						<textarea name="receiveMethod" id="receiveMethod" cols="30" rows="5"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="dateTime">Date and Time</label>
+					</td>
+					<td>
+						<input type="datetime-local" id="dateTime" name="dateTime" />
+					</td>
+				</tr>
+			</table>
+		</form>
+
+		<form action="">
+			<table>
+				<tr>
+					<h1>Order Form</h1>
+				</tr>
+				<tr>
+					<td>
+						<label for="items">Items</label>
+					</td>
+					<td>
+						<input type="checkbox" id="burger" name="order" /> <label for="burger"> Burgers </label> <input type="checkbox" id="pasta" name="order" /> <label for="fries"> Fries </label> <input type="checkbox" id="fries" name="order" />
+						<label for="pasta"> Pasta </label> <input type="checkbox" id="drink" name="order" /> <label for="drink"> Drink </label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<h3>Customize Order</h3>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h5>Burger</h5>
+					</td>
+				</tr>
+				<tr>
+					<td>Patty</td>
+					<td>
+						<input type="radio" name="patty" id="singlePatty" value="single" checked />
+						<label for="singlePatty">Single Patty</label>
+						<input type="radio" name="patty" id="doublePatty" value="double" />
+						<label for="doublePatty">Double Patty</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Bun</td>
+					<td>
+						<input type="radio" name="bun" id="whiteBun" value="whiteBun" checked />
+						<label for="singlePatty">White Bun</label>
+						<input type="radio" name="bun" id="wheatBun" value="wheatBun" />
+						<label for="doublePatty">Wheat Bun</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Quantity</td>
+					<td><input type="number" name="burgerQuantity" id="burgerQuantity" min="1" max="99" value="1" /></td>
+				</tr>
+				<tr>
+					<td>
+						<h5>Pasta</h5>
+					</td>
+				</tr>
+				<tr>
+					<td>Sauce</td>
+					<td>
+						<input type="radio" name="pastaSauce" id="carbonaraSauce" value="carbonara" checked />
+						<label for="singlePatty">Carbonara</label>
+						<input type="radio" name="pastaSauce" id="pestoSauce" value="pesto" />
+						<label for="doublePatty">Pesto</label>
+						<input type="radio" name="spaghettiSauce" id="spaghettiSauce" value="spaghetti" />
+						<label for="doublePatty">Spaghetti</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="extrasPasta">Extras</label></td>
+					<td>
+						<input type="checkbox" name="extraCheese" id="extraCheese" />
+						<label for="extrasPasta">Extra Cheese</label>
+						<input type="checkbox" name="extraSauce" id="extraSauce" />
+						<label for="extrasPasta">Extra Sauce</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Quantity (Per Box)</td>
+					<td><input type="number" name="pastaQuantity" id="pastaQuantity" min="1" max="99" value="1" /></td>
+				</tr>
+				<tr>
+					<td>
+						<h5>Fries</h5>
+					</td>
+				</tr>
+				<tr>
+					<td>Size</td>
+					<td>
+						<input type="radio" name="friesSize" id="smallFries" value="small" checked />
+						<label for="singlePatty">Small Fries</label>
+						<input type="radio" name="friesSize" id="mediumFries" value="medium" />
+						<label for="singlePatty">Medium Fries</label>
+						<input type="radio" name="friesSize" id="largeFries" value="largeFries" />
+						<label for="singlePatty">Large Fries</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Flavors</td>
+					<td>
+						<input type="radio" name="friesFlavor" id="barbecueFries" value="barbecue" checked />
+						<label for="singlePatty">Barbecue</label>
+						<input type="radio" name="friesFlavor" id="cheeseFries" value="cheese" />
+						<label for="doublePatty">Cheese</label>
+						<input type="radio" name="friesFlavor" id="sourCreamFries" value="sourCream" />
+						<label for="doublePatty">Sour Cream</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Quantity</td>
+					<td><input type="number" name="friesQuantity" id="friesQuantity" min="1" max="99" value="1" /></td>
+				</tr>
+				<tr>
+					<td>
+						<h5>Drinks</h5>
+					</td>
+				</tr>
+				<tr>
+					<td>Size</td>
+					<td>
+						<input type="radio" name="drinkSize" id="8oz" value="8" checked />
+						<label for="8oz">8 Ounces</label>
+						<input type="radio" name="drinkSize" id="12oz" value="12" />
+						<label for="12oz">12 Ounces</label>
+						<input type="radio" name="drinkSize" id="16oz" value="16" />
+						<label for="16oz">16 Ounces</label>
+						<input type="radio" name="drinkSize" id="20oz" value="20" />
+						<label for="20oz">20 Ounces</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Type</td>
+					<td>
+						<select name="drinkFlavor" id="drinkFlavor">
+							<option value="water" selected>Water</option>
+							<option value="fruitJuice">Fruit Juice</option>
+							<option value="cola">Cola</option>
+							<option value="milk">Milk</option>
+							<option value="iceTea">Iced Tea</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Quantity</td>
+					<td><input type="number" name="drinkQuantity" id="drinkQuantity" min="1" max="99" value="1" /></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<h3>Payment & Delivery</h3>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="deliveryDate">Delivery Method</label>
+					</td>
+					<td>
+						<input type="radio" name="deliveryMethod" id="deliveryMethod" value="delivery" checked />
+						<label for="deliveryMethod">Delivery</label>
+						<input type="radio" name="deliveryMethod" id="pickupMethod" value="pickup" />
+						<label for="pickupMethod">Pickup</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Proof of Payment</td>
+					<td>
+						<input type="file" name="proofOfPayment" id="proofOfPayment" accept="image/*" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<h3>Feedback</h3>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="receiveMethod">Any feedbacks on improving our ordering form?</label>
+					</td>
+					<td>
+						<textarea name="receiveMethod" id="receiveMethod" cols="30" rows="5"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="deliveryRating">Rate our Delivery Service</label>
+					</td>
+					<td>
+						<input type="range" name="deliveryRating" id="deliveryRating" min="1" max="10" step="1" />
+					</td>
+				</tr>
+				<tr>
+					<td>Submit / Clear Form</td>
+					<td>
+						<input type="submit" value="Submit Order" />
+						<input type="reset" value="Clear Order" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

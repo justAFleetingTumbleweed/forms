@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family:sans-serif;
+        }
+        table,tr,th, td{
+            border: 0px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            width: 40%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>
+        FORMS IN HTML
+    </title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form method="post" action="iframe.html">
+    <table>
+        <tr>
+            <td>
+                <label for="name">Student Name</label>
+                <td>
+                    <input type="text" size="30" id="name" placeholder="Enter your name here" required maxlength="50">  
+                </td> 
+            </td>
+        </tr>
+        <tr>
+                <td><label for="email">Student Email</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </td>            
+        </tr>
+
+        <tr>
+            <td><label for="pswd">Password</label></td>
+            <td><input type="password" id="pswd"></td>
+        </tr>
+        <tr>
+            <td><label for="country">Country</label></td>
+            <td>
+                <select name="country" id="country" size="3" multiple>
+                    <option value="singapore">Singapore</option>
+                    <option value="singapore">Vietnam</option>
+                    <option value="singapore">Thailand</option>
+                    <option value="singapore" selected >Philippines</option>
+                    <option value="singapore">South Korea</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Status of Enrollment</td>
+            <td>
+                <input type="radio" id="block section" name="section"><label for="block section">Block Section</label>
+
+                <br><br>
+                <input type="radio" id="free section" name="section"><label for="Free Section">Free Section</label>
+        </tr>
+        <tr>
+            <td>Tick what programming language to learn</td>
+            <td>
+                <input type="checkbox" id="pl1" name="prog"><label for="pl1">Python</label>
+
+                <br>
+
+                <input type="checkbox" id="pl2" name="prog"><label for="pl2">PHP</label>
+
+                <br>
+                
+                <input type="checkbox" id="pl3" name="prog"><label for="pl3">JAVA</label>
+
+                <br>
+
+                <input type="checkbox" id="pl4" name="prog"><label for="pl4">VISUAL BASIC</label>
+
+        </tr>
+        <tr>
+            <td><label for="aptime">Schedule an Appointment (date/time)</label></td>
+            <td><input type="datetime-local" name="appt" id="aptime"></td>
+        </tr>
+
+        <tr>
+            <td><label for="num">How many times can you commit to practice in a week? (between 0-7)</label></td>
+            <td><input type="number" id="num" name="quantity" min="0" max="7"></td>
+        </tr>
+            <td><label for="favcolor">Pick a color for your shirt</label></td>
+            <td><input type="color" id="favcolor" name="color"></td>
+
+        
+        <tr>
+            <td> <input type="submit" value="Submit Registration"></td>
+            <td><input type="reset" value="Clear Registration"></td>
+        </tr>
+    </table>
+</body>
+</html>
